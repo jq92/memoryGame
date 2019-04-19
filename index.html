@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <section class="memory-game">
+      <div class="memory-card" data-name="aurelia">
+        <img class="front-face" src="img/aurelia.svg" alt="Aurelia" />
+        <img class="back-face" src="img/question.png" alt="Question Mark" />
+      </div>
+      <div class="memory-card" data-name="aurelia">
+        <img class="front-face" src="img/aurelia.svg" alt="Aurelia" />
+        <img class="back-face" src="img/question.png" alt="Question Mark" />
+      </div>
+
+      <div class="memory-card" data-name="vue">
+        <img class="front-face" src="img/vue.svg" alt="Vue" />
+        <img class="back-face" src="img/question.png" alt="Question Mark" />
+      </div>
+      <div class="memory-card" data-name="vue">
+        <img class="front-face" src="img/vue.svg" alt="Vue" />
+        <img class="back-face" src="img/question.png" alt="Question Mark" />
+      </div>
+
+      <div class="memory-card" data-name="angular">
+        <img class="front-face" src="img/angular.svg" alt="Angular" />
+        <img class="back-face" src="img/question.png" alt="Question Mark" />
+      </div>
+      <div class="memory-card" data-name="angular">
+        <img class="front-face" src="img/angular.svg" alt="Angular" />
+        <img class="back-face" src="img/question.png" alt="Question Mark" />
+      </div>
+
+      <div class="memory-card" data-name="ember">
+        <img class="front-face" src="img/ember.svg" alt="Ember" />
+        <img class="back-face" src="img/question.png" alt="Question Mark" />
+      </div>
+      <div class="memory-card" data-name="ember">
+        <img class="front-face" src="img/ember.svg" alt="Ember" />
+        <img class="back-face" src="img/question.png" alt="Question Mark" />
+      </div>
+
+      <div class="memory-card" data-name="backbone">
+        <img class="front-face" src="img/backbone.svg" alt="Backbone" />
+        <img class="back-face" src="img/question.png" alt="Question Mark" />
+      </div>
+      <div class="memory-card" data-name="backbone">
+        <img class="front-face" src="img/backbone.svg" alt="Backbone" />
+        <img class="back-face" src="img/question.png" alt="Question Mark" />
+      </div>
+
+      <div class="memory-card" data-name="react">
+        <img class="front-face" src="img/react.svg" alt="React" />
+        <img class="back-face" src="img/question.png" alt="Question Mark" />
+      </div>
+      <div class="memory-card" data-name="react">
+        <img class="front-face" src="img/react.svg" alt="React" />
+        <img class="back-face" src="img/question.png" alt="Question Mark" />
+      </div>
+    </section>
+
+    <!-- Ending pop up -->
+    <div class="modal closed" id="modal">
+      <h1>You Won!</h1>
+      <h3>Moves Taken: <span id="moves"></span></h3>
+
+      <button id="restart" class="btn-restart" onclick="playAgain()">
+        Restart
+      </button>
+    </div>
+    <div class="modal-overlay closed" id="modal-overlay"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
